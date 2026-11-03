@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DRC Freight & Logistics | SELAF South Africa</title>
+
+<meta name="description" content="SELAF provides coordinated freight, cross-border road transport, mining logistics and cargo solutions connecting South Africa with the Democratic Republic of Congo (DRC).">
+<meta name="keywords" content="DRC freight companies, DRC freight services, South Africa to DRC transport, Lubumbashi freight, Kolwezi logistics, Congo mining logistics, cross border freight">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Smart Express Logistics & Fleet Management">
+
+<meta property="og:title" content="DRC Freight & Logistics Solutions | SELAF">
+<meta property="og:description" content="Connecting South Africa and the Democratic Republic of Congo through integrated freight and logistics solutions.">
+<meta property="og:type" content="website">
+
+<style>
+:root {
+  --navy:#101d35;
+  --navy2:#172c4c;
+  --blue:#2878b9;
+  --lightblue:#63b8e8;
+  --red:#e53945;
+  --white:#ffffff;
+  --grey:#f3f6fa;
+  --text:#344257;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html { scroll-behavior:smooth; }
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  color:var(--text);
+  background:white;
+  line-height:1.7;
+}
+
+a { text-decoration:none; }
+
+.topbar {
+  background:#0b1629;
+  color:#dce6f2;
+  padding:10px 7%;
+  font-size:12px;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+header {
+  background:white;
+  padding:15px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0 3px 15px rgba(0,0,0,.07);
+}
+
+.logo img {
+  width:230px;
+  max-width:100%;
+  max-height:75px;
+  object-fit:contain;
+}
+
+nav {
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+nav a {
+  color:var(--navy);
+  font-size:13px;
+  font-weight:bold;
+}
+
+nav a:hover { color:var(--blue); }
+
+.hero {
+  min-height:590px;
+  background:
+    linear-gradient(90deg,rgba(8,20,39,.94),rgba(8,20,39,.68),rgba(8,20,39,.18)),
+    url("https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2000&q=90")
+    center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  padding:90px 9%;
+  color:white;
+}
+
+.hero-content { max-width:760px; }
+
+.eyebrow {
+  color:#8bc9f0;
+  font-size:13px;
+  font-weight:bold;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:20px;
+}
+
+.hero h1 {
+  font-size:clamp(36px,5.5vw,65px);
+  line-height:1.12;
+  margin-bottom:25px;
+  letter-spacing:-1.5px;
+}
+
+.hero h1 span { color:#70b9e9; }
+
+.hero p {
+  font-size:17px;
+  color:#e0e8f2;
+  max-width:650px;
+  margin-bottom:32px;
+}
+
+.btn {
+  display:inline-block;
+  padding:15px 26px;
+  border-radius:3px;
+  font-weight:bold;
+  font-size:13px;
+  transition:.2s;
+  margin:5px 8px 5px 0;
+}
+
+.btn-red {
+  background:var(--red);
+  color:white;
+}
+
+.btn-red:hover { background:#c92835; }
+
+.btn-outline {
+  border:1px solid white;
+  color:white;
+}
+
+.btn-outline:hover {
+  background:white;
+  color:var(--navy);
+}
+
+.section {
+  padding:85px 8%;
+}
+
+.section-light { background:var(--grey); }
+
+.section-heading {
+  max-width:760px;
+  margin-bottom:45px;
+}
+
+.section-heading .eyebrow { color:var(--blue); }
+
+.section-heading h2 {
+  color:var(--navy);
+  font-size:clamp(28px,4vw,40px);
+  line-height:1.2;
+  margin-bottom:18px;
+}
+
+.section-heading p { font-size:15px; }
+
+.intro-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.intro-image img {
+  width:100%;
+  height:390px;
+  object-fit:cover;
+  border-radius:5px;
+}
+
+.intro-text h2 {
+  font-size:35px;
+  color:var(--navy);
+  line-height:1.2;
+  margin-bottom:22px;
+}
+
+.intro-text p { margin-bottom:17px; }
+
+.services {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+.service-card {
+  background:white;
+  box-shadow:0 7px 28px rgba(14,31,55,.08);
+  border-radius:5px;
+  overflow:hidden;
+  transition:.25s;
+}
+
+.service-card:hover {
+  transform:translateY(-5px);
+}
+
+.service-card img {
+  width:100%;
+  height:215px;
+  object-fit:cover;
+}
+
+.service-content { padding:25px; }
+
+.service-content h3 {
+  color:var(--navy);
+  font-size:20px;
+  margin-bottom:12px;
+}
+
+.service-content p { font-size:14px; }
+
+.service-content a {
+  display:inline-block;
+  margin-top:18px;
+  color:var(--blue);
+  font-size:13px;
+  font-weight:bold;
+}
+
+.routes {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.route {
+  background:var(--navy);
+  padding:30px;
+  color:white;
+  border-left:4px solid var(--red);
+}
+
+.route h3 {
+  font-size:19px;
+  margin-bottom:12px;
+}
+
+.route p {
+  font-size:14px;
+  color:#d4deeb;
+}
+
+.route-label {
+  color:#79c5f0;
+  font-size:11px;
+  letter-spacing:2px;
+  font-weight:bold;
+  margin-bottom:12px;
+}
+
+.why-grid {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:25px;
+}
+
+.why-card {
+  padding:25px;
+  border:1px solid #e5eaf0;
+  background:white;
+}
+
+.why-card .number {
+  color:var(--red);
+  font-size:30px;
+  font-weight:bold;
+}
+
+.why-card h3 {
+  color:var(--navy);
+  margin:10px 0;
+  font-size:17px;
+}
+
+.why-card p { font-size:13px; }
+
+.cta {
+  background:
+    linear-gradient(90deg,rgba(10,25,47,.96),rgba(10,25,47,.83)),
+    url("https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+  color:white;
+  padding:85px 8%;
+  text-align:center;
+}
+
+.cta h2 {
+  font-size:clamp(28px,4vw,42px);
+  margin-bottom:18px;
+}
+
+.cta p {
+  max-width:700px;
+  margin:0 auto 25px;
+  color:#dce6f2;
+}
+
+.contact-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+}
+
+.contact-info h2 {
+  color:var(--navy);
+  font-size:35px;
+  margin-bottom:20px;
+}
+
+.contact-info p { margin-bottom:16px; }
+
+.contact-info strong { color:var(--navy); }
+
+.contact-form {
+  background:white;
+  padding:30px;
+  box-shadow:0 5px 25px rgba(0,0,0,.07);
+}
+
+.contact-form h3 {
+  color:var(--navy);
+  font-size:23px;
+  margin-bottom:20px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width:100%;
+  padding:14px;
+  border:1px solid #dce2ea;
+  margin-bottom:15px;
+  font-family:inherit;
+  font-size:14px;
+  border-radius:3px;
+  background:white;
+}
+
+.contact-form textarea {
+  min-height:120px;
+  resize:vertical;
+}
+
+.contact-form button {
+  border:0;
+  cursor:pointer;
+  width:100%;
+}
+
+footer {
+  background:#0a1425;
+  color:#c8d2df;
+  padding:45px 8% 20px;
+}
+
+.footer-grid {
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:35px;
+  margin-bottom:35px;
+}
+
+footer h3 {
+  color:white;
+  margin-bottom:15px;
+}
+
+footer p, footer a {
+  color:#c8d2df;
+  font-size:13px;
+}
+
+footer a {
+  display:block;
+  margin-bottom:9px;
+}
+
+.footer-bottom {
+  border-top:1px solid #29374b;
+  padding-top:20px;
+  font-size:12px;
+  text-align:center;
+}
+
+.whatsapp {
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:200;
+  background:#168b58;
+  color:white;
+  padding:15px 19px;
+  border-radius:35px;
+  font-size:13px;
+  font-weight:bold;
+  box-shadow:0 4px 15px rgba(0,0,0,.25);
+}
+
+@media(max-width:850px) {
+  header { flex-wrap:wrap; }
+  nav { gap:13px; flex-wrap:wrap; }
+  .intro-grid,.contact-grid { grid-template-columns:1fr; }
+  .services { grid-template-columns:repeat(2,1fr); }
+  .routes { grid-template-columns:repeat(2,1fr); }
+  .why-grid { grid-template-columns:repeat(2,1fr); }
+}
+
+@media(max-width:550px) {
+  .topbar { justify-content:center; text-align:center; }
+  header { justify-content:center; }
+  nav { justify-content:center; }
+  nav a { font-size:11px; }
+  .hero { min-height:540px; padding:65px 7%; }
+  .hero p { font-size:15px; }
+  .section { padding:60px 7%; }
+  .services,.routes,.why-grid { grid-template-columns:1fr; }
+  .intro-image img { height:270px; }
+  .footer-grid { grid-template-columns:1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <span>INTEGRATED LOGISTICS • MINING SUPPLY • FLEET SOLUTIONS</span>
+  <span>South Africa | Democratic Republic of Congo</span>
+</div>
+
+<header>
+  <a href="#home" class="logo">
+    <img src="SELAF_Standalone_Logo_High_Quality.png"
+         alt="SELAF Smart Express Logistics and Fleet Management">
+  </a>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#routes">ROUTES</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">South Africa • Central Africa • DRC</div>
+
+    <h1>
+      Connecting Industries Through
+      <span>DRC Freight & Logistics.</span>
+    </h1>
+
+    <p>
+      Integrated freight coordination, cross-border transport,
+      mining logistics and supply solutions connecting South Africa
+      with the Democratic Republic of Congo.
+    </p>
+
+    <a href="#contact" class="btn btn-red">REQUEST A FREIGHT QUOTATION</a>
+    <a href="#services" class="btn btn-outline">EXPLORE OUR SERVICES</a>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="intro-grid">
+
+    <div class="intro-image">
+      <img
+      <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=900&q=85" alt="Cross-border road freight truck">
+      alt="International freight transportation">
+    </div>
+
+    <div class="intro-text">
+      <div class="eyebrow">WHO WE ARE</div>
+
+      <h2>Your Logistics Connection Between South Africa and the DRC</h2>
+
+      <p>
+        Smart Express Logistics & Fleet Management (Pty) Ltd,
+        operating as SELAF, is an integrated logistics and supply
+        solutions company focused on supporting commercial,
+        industrial and mining supply chains.
+      </p>
+
+      <p>
+        We coordinate freight and transport solutions through
+        established service providers, connecting businesses,
+        suppliers and destinations across regional markets.
+      </p>
+
+      <p>
+        Our approach combines logistics coordination, transport
+        planning and customer-focused service to support cargo
+        movements between South Africa and the Democratic
+        Republic of Congo.
+      </p>
+
+      <a href="#contact" class="btn btn-red">CONTACT OUR TEAM</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="section section-light" id="services">
+
+  <div class="section-heading">
+    <div class="eyebrow">OUR CAPABILITIES</div>
+    <h2>Integrated Freight & Logistics Solutions</h2>
+    <p>
+      Supporting cargo movements and industrial supply requirements
+      through coordinated freight and logistics services.
+    </p>
+  </div>
+
+  <div class="services">
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=85" alt="Road freight cargo">
+      <div class="service-content">
+        <h3>Road Freight</h3>
+        <p>
+          Full truckload and part-load transport coordination,
+          cross-border freight planning and regional cargo movement.
+        </p>
+        <a href="#contact">ENQUIRE ABOUT ROAD FREIGHT →</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=900&q=85" alt="Sea freight container vessel">
+      <div class="service-content">
+        <h3>Sea Freight</h3>
+        <p>
+          International shipping coordination, port-to-port cargo
+          solutions and container freight arrangements.
+        </p>
+        <a href="#contact">ENQUIRE ABOUT SEA FREIGHT →</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=85" alt="Air freight aircraft">
+      <div class="service-content">
+        <h3>Air Freight</h3>
+        <p>
+          Air cargo coordination for urgent shipments,
+          commercial consignments and time-sensitive deliveries.
+        </p>
+        <a href="#contact">ENQUIRE ABOUT AIR FREIGHT →</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=900&q=85" alt="Mining industrial equipment">
+      <div class="service-content">
+        <h3>Mining Logistics</h3>
+        <p>
+          Logistics coordination and supply-chain support
+          for mining, engineering and industrial operations.
+        </p>
+        <a href="#contact">ENQUIRE ABOUT MINING LOGISTICS →</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=900&q=85" alt="Warehouse cargo">
+      <div class="service-content">
+        <h3>Supply & Distribution</h3>
+        <p>
+          Industrial sourcing coordination, cargo distribution
+          and supply-chain support for business operations.
+        </p>
+        <a href="#contact">ENQUIRE ABOUT SUPPLY SOLUTIONS →</a>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=900&q=85" alt="Cargo containers">
+      <div class="service-content">
+        <h3>Cross-Border Logistics</h3>
+        <p>
+          Regional freight coordination, transport planning
+          and shipment support for cross-border movements.
+        </p>
+        <a href="#contact">DISCUSS YOUR REQUIREMENTS →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="routes">
+
+  <div class="section-heading">
+    <div class="eyebrow">REGIONAL CONNECTIVITY</div>
+    <h2>South Africa – DRC Freight Connections</h2>
+    <p>
+      Supporting freight enquiries for important commercial
+      and mining destinations in the Democratic Republic of Congo.
+      Routes are subject to cargo requirements, service availability
+      and operational confirmation.
+    </p>
+  </div>
+
+  <div class="routes">
+
+    <div class="route">
+      <div class="route-label">FREIGHT CORRIDOR 01</div>
+      <h3>Johannesburg → Lubumbashi</h3>
+      <p>Regional road freight and commercial cargo coordination.</p>
+    </div>
+
+    <div class="route">
+      <div class="route-label">FREIGHT CORRIDOR 02</div>
+      <h3>Johannesburg → Kolwezi</h3>
+      <p>Mining-related freight, industrial supplies and cargo solutions.</p>
+    </div>
+
+    <div class="route">
+      <div class="route-label">FREIGHT CORRIDOR 03</div>
+      <h3>Johannesburg → Likasi</h3>
+      <p>Transport planning and logistics support for industrial destinations.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section section-light">
+
+  <div class="section-heading">
+    <div class="eyebrow">THE SELAF APPROACH</div>
+    <h2>More Than Logistics — We Move Industries.</h2>
+  </div>
+
+  <div class="why-grid">
+
+    <div class="why-card">
+      <div class="number">01</div>
+      <h3>Integrated Solutions</h3>
+      <p>Road, sea, air freight and supply-chain coordination.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="number">02</div>
+      <h3>Regional Focus</h3>
+      <p>Connecting South African businesses with regional markets.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="number">03</div>
+      <h3>Mining & Industry</h3>
+      <p>Logistics and sourcing support for industrial requirements.</p>
+    </div>
+
+    <div class="why-card">
+      <div class="number">04</div>
+      <h3>Service Coordination</h3>
+      <p>Coordinating reliable transport and logistics service providers.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta">
+  <h2>Moving Cargo. Connecting Markets. Supporting Industry.</h2>
+
+  <p>
+    Looking for freight services between South Africa and the
+    Democratic Republic of Congo? Contact SELAF to discuss
+    your cargo and transport requirements.
+  </p>
+
+  <a href="#contact" class="btn btn-red">REQUEST A QUOTATION</a>
+</section>
+
+<section class="section" id="contact">
+
+  <div class="contact-grid">
+
+    <div class="contact-info">
+      <div class="eyebrow">GET IN TOUCH</div>
+
+      <h2>Let's Move Your Business Forward.</h2>
+
+      <p>
+        Contact our team for freight enquiries, transport
+        estimates, mining logistics and supply requirements.
+      </p>
+
+      <p><strong>Company:</strong><br>
+      Smart Express Logistics & Fleet Management (Pty) Ltd</p>
+
+      <p><strong>Email:</strong><br>
+      selaf.operations@outlook.com</p>
+
+      <p><strong>Telephone:</strong><br>
+      065 759 1489<br>
+      073 164 3987</p>
+
+      <p><strong>Business Address:</strong><br>
+      Building 3, Boundary River Park,<br>
+      Boundary Road, Northriding,<br>
+      Randburg, South Africa.</p>
+
+      <p><strong>Company Registration:</strong><br>
+      2021/723490/07</p>
+
+    </div>
+
+    <div class="contact-form">
+      <h3>Request a Freight Estimate</h3>
+
+      <form id="enquiryForm">
+
+        <input type="text" id="name" placeholder="Your name / Company" required>
+
+        <input type="email" id="email" placeholder="Your email address" required>
+
+        <input type="tel" id="phone" placeholder="Contact number" required>
+
+        <select id="service" required>
+          <option value="">Select service required</option>
+          <option>Road Freight</option>
+          <option>Sea Freight</option>
+          <option>Air Freight</option>
+          <option>Mining Logistics</option>
+          <option>Supply & Distribution</option>
+          <option>Cross-Border Logistics</option>
+        </select>
+
+        <input type="text" id="route" placeholder="Origin and destination">
+
+        <textarea id="details" placeholder="Briefly describe your cargo and requirements"></textarea>
+
+        <button type="submit" class="btn btn-red">
+          SEND ENQUIRY TO SELAF
+        </button>
+
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+      <h3>SELAF</h3>
+      <p>
+        Smart Express Logistics & Fleet Management (Pty) Ltd.
+        Integrated logistics, mining supply and fleet solutions.
+      </p>
+      <p style="margin-top:15px;">
+        More Than Logistics — We Move Industries.
+      </p>
+    </div>
+
+    <div>
+      <h3>OUR SERVICES</h3>
+      <a href="#services">Road Freight</a>
+      <a href="#services">Sea Freight</a>
+      <a href="#services">Air Freight</a>
+      <a href="#services">Mining Logistics</a>
+      <a href="#services">Cross-Border Logistics</a>
+    </div>
+
+    <div>
+      <h3>CONTACT</h3>
+      <a href="mailto:selaf.operations@outlook.com">Email SELAF</a>
+      <a href="tel:+27657591489">065 759 1489</a>
+      <a href="tel:+27731643987">073 164 3987</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 SELAF | Smart Express Logistics & Fleet Management (Pty) Ltd.
+    All Rights Reserved.
+  </div>
+
+</footer>
+
+<a class="whatsapp"
+   href="https://wa.me/27657591489?text=Hello%20SELAF%2C%20I%20would%20like%20a%20freight%20quotation."
+   target="_blank" rel="noopener">
+   WhatsApp SELAF
+</a>
+
+<script>
+document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value;
+  const service = document.getElementById("service").value;
+  const route = document.getElementById("route").value;
+  const details = document.getElementById("details").value;
+
+  const subject = encodeURIComponent("SELAF Freight Enquiry - " + service);
+
+  const body = encodeURIComponent(
+    "New freight enquiry\n\n" +
+    "Name / Company: " + name + "\n" +
+    "Email: " + email + "\n" +
+    "Telephone: " + phone + "\n" +
+    "Service: " + service + "\n" +
+    "Route: " + route + "\n" +
+    "Requirements: " + details
+  );
+
+  window.location.href =
+    "mailto:selaf.operations@outlook.com?subject=" +
+    subject + "&body=" + body;
+});
+</script>
+
+</body>
+</html>
